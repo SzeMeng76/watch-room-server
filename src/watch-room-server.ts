@@ -3,8 +3,6 @@ import { Server as SocketIOServer, Socket } from 'socket.io';
 import type {
   Room,
   Member,
-  PlayState,
-  LiveState,
   ChatMessage,
   ServerToClientEvents,
   ClientToServerEvents,

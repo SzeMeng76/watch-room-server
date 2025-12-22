@@ -1,5 +1,17 @@
 // 观影室相关类型定义
 
+// WebRTC 类型定义（用于 Node.js 环境）
+export type RTCSessionDescriptionInit = {
+  type: 'offer' | 'answer';
+  sdp: string;
+};
+
+export type RTCIceCandidateInit = {
+  candidate: string;
+  sdpMLineIndex?: number | null;
+  sdpMid?: string | null;
+};
+
 export interface Room {
   id: string;
   name: string;

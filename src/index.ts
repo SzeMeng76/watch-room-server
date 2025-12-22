@@ -53,7 +53,7 @@ app.get('/stats', (req, res) => {
   }
 
   const stats = watchRoomServer.getStats();
-  res.json(stats);
+  return res.json(stats);
 });
 
 // 根路径
