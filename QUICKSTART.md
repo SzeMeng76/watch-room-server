@@ -73,7 +73,6 @@ docker run -d \
   -p 3001:3001 \
   -e AUTH_KEY=your-secret-key \
   -e ALLOWED_ORIGINS=https://your-domain.com \
-  -e NODE_ENV=production \
   ghcr.io/szemeng76/watch-room-server:latest
 
 # 查看日志
@@ -97,7 +96,6 @@ services:
     environment:
       - AUTH_KEY=your-secret-key
       - ALLOWED_ORIGINS=https://your-domain.com
-      - NODE_ENV=production
 ```
 
 然后运行：
